@@ -1,0 +1,29 @@
+.navbar{
+    display: flex;
+    padding-inline-start: 900px;
+    column-gap: 100px;
+    block-size: 70px;
+    inline-size: 700px;
+    background-color: aqua;
+    margin-block-start: 0px;
+}
+.side-name{
+    padding-block-start: 20px;
+}
+.container{
+    display: block-end;
+    block-size: 100px;
+    inline-size: 1600px;
+    background-color: black;
+    color:white;
+    margin: 0;
+   
+    text-align: center;
+    padding-block-start: 40px;
+    text-decoration: underline;
+}
+.footer{
+    position:bottom;
+   
+    
+}
