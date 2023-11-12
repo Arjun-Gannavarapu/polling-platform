@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 
+
+ 
 const Idea = () => {
   const [title, setTitle] = useState('');
   const [idea, setIdea] = useState('');
@@ -22,7 +24,9 @@ const Idea = () => {
             <input type='text' name='title' id='title' className='input-form' value={title} onChange={(e) => setTitle(e.target.value)} />
             <label className='label-name2' htmlFor='idea'>Elaborate Your Idea</label>
             <input type='text' name='idea' className='input-form2' id='idea' value={idea} onChange={(e) => setIdea(e.target.value)} />
-            <button type='submit' className='btn2'> Post</button>
+           <button type='submit' className='btn2' onClick={()=>alert("response submited")}> Post</button>
+           
+            
           </form>
         </div>
       </div>

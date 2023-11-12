@@ -1,5 +1,7 @@
 import React from 'react';
-import {useState} from 'react'
+import {useState} from 'react';
+import {Link} from 'react-router-dom';
+import {Button} from 'react-bootstrap'
 
 const Login = () => {
   const [email,setEmail]=useState('')
@@ -38,7 +40,7 @@ const Login = () => {
             
           />
         </div>
-        <button type="submit"  className='login-btn' onSubmit={submitHandler}>Login</button>
+        <Link to='/voting'><Button type="submit"  className='login-btn' onSubmit={submitHandler}>Login</Button></Link>
       </form>
     </div>
   );

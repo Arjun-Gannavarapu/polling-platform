@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
-import '../App.css'
+import '../App.css';
+import {Link} from 'react-router-dom';
+import {Button}  from 'react-bootstrap'
 
 const ProfilePage = () => {
   // Simulated user data
@@ -75,6 +77,7 @@ const ProfilePage = () => {
           <button onClick={() => setIsEditing(true)} className='edit'>Edit Profile</button>
         </div>
       )}
+      <Link to='/ideas-rang'><Button className='btn'>explore ideas</Button></Link>
     </div>
   );
 };

@@ -15,7 +15,7 @@ const Home = () => {
       <div className='idea'>
        <h2>Share Your Idea</h2>
        <p className='para'>change the world with your idea</p>
-       <Link to='/idea'><Button className='btn'> Share</Button></Link>
+       <Link to='/register'><Button className='btn'> Become a Voter</Button></Link>
       </div>
      
       
@@ -24,11 +24,13 @@ const Home = () => {
       <h2>Vote The idea</h2>
       <div>
         <p>vote for the right idea that change the future</p>
-        <Link to='/voting'><Button>Vote</Button></Link>
+        <Link to='/login'><Button>Become a Observer</Button></Link>
       </div>
     </div>
    
      </div>
+
+     
     </>
     
     

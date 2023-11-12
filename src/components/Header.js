@@ -13,7 +13,7 @@ const Header = () => {
       <Nav.Link href="/about">About</Nav.Link>
     </Nav.Item>
     <Nav.Item  className='side-name'>
-      <Nav.Link href="/login">Login</Nav.Link>
+      <Nav.Link href="/ideas-rang">IdeasRang</Nav.Link>
     </Nav.Item>
     <Nav.Item  className='side-name'>
       <Nav.Link href='/profile'>my-profile</Nav.Link>
