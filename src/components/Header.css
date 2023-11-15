@@ -1,11 +1,15 @@
 .navbar{
     display: flex;
     padding-inline-start: 900px;
-    column-gap: 100px;
+    column-gap: 50px;
     block-size: 70px;
-    inline-size: 700px;
-    background-color: aqua;
+    inline-size: 630px;
+    background-color: rgb(206, 222, 222);
     margin-block-start: 0px;
+}
+#wavo{
+    text-align: start;
+    column-gap: 300px;
 }
 .side-name{
     padding-block-start: 20px;
@@ -26,4 +30,11 @@
     position:bottom;
    
     
+}
+.btn-login{
+    background-color: blue;
+    border:none;
+    border-color: none;
+    margin-block-start: 6px;
+
 }
