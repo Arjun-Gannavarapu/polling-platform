@@ -11,8 +11,11 @@ import Idea from './pages/Idea';
 import Voting from './pages/VotingPage';
 import Registration from './pages/RegistrationPage';
 import IdeasRang from './pages/IdeasRang'
-
-
+import Grace from './Grace';
+import Feutures from './pages/Feutures';
+import Settings from './pages/Settings';
+import Published from './pages/Published';
+import MyWork from './pages/MyWork';
 function App() {
   return (
     <BrowserRouter>
@@ -27,6 +30,12 @@ function App() {
         <Route path='/idea' element={<Idea/>}/>
         <Route path='/voting' element={<Voting/>}/>
         <Route path='/ideas-rang' element={<IdeasRang/>}/>
+        <Route path='/grace' element={<Grace/>}/>
+        <Route path='/features' element={<Feutures/>}/>
+        <Route path='/settings' element={<Settings/>}/>
+        <Route path='/published' element={<Published/>}/>
+        <Route path='/mywork'element={<MyWork/>}/>
+
         
         
         

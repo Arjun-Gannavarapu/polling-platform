@@ -1,37 +1,29 @@
 import React from 'react';
 import '../App.css';
 import {Link} from 'react-router-dom'
-import { Button } from 'react-bootstrap';
+import {Button} from 'react-bootstrap'
+
+
 //import Idea from './Idea';
 //import VotingPage from './VotingPage';
 
 const Home = () => {
   return (
-    <>
-    <h2 className='title'> Welcome To The Voting Platform</h2>
-     <div className='main-box'>
-     <div className='box'>
-      
-      <div className='idea'>
-       <h2>Share Your Idea</h2>
-       <p className='para'>change the world with your idea</p>
-       <Link to='/register'><Button className='btn'> Become a Voter</Button></Link>
-      </div>
-     
-      
-    </div>
-    <div className='vote'>
-      <h2>Vote The idea</h2>
+    <section className='container-1'>
       <div>
-        <p>vote for the right idea that change the future</p>
-        <Link to='/login'><Button>Become a Observer</Button></Link>
+        <h1>Create safe,fast and reliable poll votes</h1>
       </div>
-    </div>
-   
-     </div>
-
+      <div>
+        <p>our pllatform utilises Alogorand blockChain technology to create a secure  and transparent polling 
+          system,guarenting the integrity of each vote and providing rapid verifiability</p>
+      </div>
+      <div className='btns'>
+        <Link to='/register'><Button className='poll-btn'>start poll</Button></Link>
+        <Link to='/ideas-rang'><Button className='poll-btn2'>become an observer</Button></Link>
+      </div>
+    
      
-    </>
+    </section>
     
     
   )

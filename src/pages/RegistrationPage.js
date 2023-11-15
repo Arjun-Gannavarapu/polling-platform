@@ -2,12 +2,14 @@ import React, { useState } from 'react';
 import {Button} from 'react-bootstrap';
 import {Link} from 'react-router-dom'
 const Registration = () => {
+  
   const [formData, setFormData] = useState({
     username: '',
     email: '',
     password: '',
   });
   const [idProof, setIdProof] = useState(null);
+  
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -38,21 +40,28 @@ const Registration = () => {
   };
 
   return (
+    
     <section className='registration'>
-        <div>
+      
+       
+        <div >
+         
+        <h2 >cerate a free Account or </h2>
+        <span href='/login' className='register-login'>login into your Account</span>
       <h2>Registration Page</h2>
       <form onSubmit={handleSubmit}>
         <div className='reg-label'>
-          <label htmlFor="username">Username:</label>
+          <label htmlFor="username" className='registration'>Username:</label>
           <input
             type="text"
             id="username"
             name="username"
             value={formData.username}
             onChange={handleChange}
+            
           />
         </div>
-        <div className='reg-label'>
+        <div className='reg-label' >
           <label htmlFor="email">Email:</label>
           <input
             type="email"
@@ -82,7 +91,8 @@ const Registration = () => {
             onChange={handleFileChange}
           />
         </div>
-        <Link to='/idea'><Button type="submit" className='btn'>Register</Button></Link>
+        <Link to='/login'><Button type="submit" className='poll-btn4'>signIn</Button></Link>
+        
       </form>
     </div>
     </section>

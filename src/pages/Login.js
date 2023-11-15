@@ -13,35 +13,42 @@ const Login = () => {
   
 
   return (
-    <div className='login-form'>
-      <h2 className='login-title'>Login</h2>
+    <div  className='wavo-login'>
+      <h1 className='wavo-title'>Wavo</h1>
+      <div className='wavo-login2'>
+        <h2>Create a free Account or</h2>
+        <span className='register-login2'>login to your account</span>
       <form onSubmit={submitHandler}>
-        <div className='login-page'>
-          <label htmlFor="username">Email</label>
+        <div className='login-space'>
+          <label htmlFor="username">Email:</label>
           <input
             type="email"
             id="username"
-            className='input-feed'
+           
             value={email}
+            className='login-space2'
             onChange={(e)=>setEmail(e.target.value)}
             
           />
         </div>
-        <div className='login-page'>
+        <div className='login-space' >
           <label htmlFor="password">Password</label>
           <input
             type="password"
             id="password"
             value={password}
-            className='
-            input-feed'
+            className='login-space2'
+
             onChange={(e)=>setPassword(e.target.value)}
            
             
           />
+          <span className='register-login2'>forgotten password</span>
         </div>
-        <Link to='/voting'><Button type="submit"  className='login-btn' onSubmit={submitHandler}>Login</Button></Link>
+        <Link to='/grace'><Button type="submit"  className='poll-btn4' onSubmit={submitHandler}>Signin</Button></Link>
       </form>
+      </div>
+      
     </div>
   );
 };
